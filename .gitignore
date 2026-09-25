@@ -1,5 +1,12 @@
+## .NET
 bin/
 obj/
-/packages/
-riderModule.iml
-/_ReSharper.Caches/
+
+## Rider / IntelliJ
+.idea/
+
+## VS Code
+.vscode/
+
+## macOS
+.DS_Store
