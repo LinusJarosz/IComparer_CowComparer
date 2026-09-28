@@ -3,10 +3,10 @@ namespace IComparer_CowComparer;
 public class Cow : IEquatable<Cow>, IComparable<Cow>
 {
     public string Name { get; }
-    public string Colour { get; }
+    public Colour Colour { get; }
     public int Age { get; }
 
-    public Cow(string name, string colour, int age)
+    public Cow(string name, Colour colour, int age)
     {
         Name = name;
         Colour = colour;

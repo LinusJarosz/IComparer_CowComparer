@@ -1,4 +1,6 @@
-﻿namespace IComparer_CowComparer;
+﻿using System.Drawing;
+
+namespace IComparer_CowComparer;
 
 class Program
 {
@@ -6,13 +8,13 @@ class Program
     {
         List<Cow> cows =
         [
-            new Cow("Milka", "lila", 4),
-            new Cow("Paula", "weiss", 6),
-            new Cow("Conny", "schwarz", 4),
-            new Cow("Berta", "weiss", 7),
-            new Cow("Mathias", "rosa", 4),
-            new Cow("Milka", "rosa", 4),
-            new Cow("Milka", "lila", 5)
+            new Cow("Milka", Colour.Lila, 4),
+            new Cow("Paula", Colour.Weiß, 6),
+            new Cow("Conny", Colour.Braun, 4),
+            new Cow("Berta", Colour.Weiß, 7),
+            new Cow("Mathias", Colour.Rosa, 4),
+            new Cow("Milka", Colour.Rosa, 4),
+            new Cow("Milka", Colour.Lila, 5)
         ];
         cows.Sort();
         foreach(Cow cow in cows) Console.WriteLine(cow);
