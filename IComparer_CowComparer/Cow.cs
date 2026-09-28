@@ -13,6 +13,8 @@ public class Cow : IEquatable<Cow>, IComparable<Cow>
         Age = age;
     }
 
+    public override string ToString() => $"{Name}; {Colour}; {Age} ";
+
     public int GetHashCode() => HashCode.Combine(Name, Colour, Age);
     public bool Equals(Cow? other)
     {
